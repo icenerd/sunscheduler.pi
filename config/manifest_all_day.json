@@ -1,0 +1,186 @@
+{
+	"name": "Portland",
+	"region": "OR",
+	"timezone": "US/Pacific",
+
+	"latitude": 45.523417,
+	"longitude": -122.669540,
+
+	"schedule_led": [
+		{
+			"gpio_id": "GPIO16",
+			"relative_to": "sunrise",
+			"open_at": 0,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO20",
+			"relative_to": "sunrise",
+			"open_at": 60,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "sunrise",
+			"open_at": 120,
+			"duration": 60
+		},
+
+		{
+			"gpio_id": "GPIO16",
+			"relative_to": "sunrise",
+			"open_at": 180,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO20",
+			"relative_to": "sunrise",
+			"open_at": 240,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "sunrise",
+			"open_at": 300,
+			"duration": 60
+		},
+
+		{
+			"gpio_id": "GPIO16",
+			"relative_to": "sunrise",
+			"open_at": 360,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO20",
+			"relative_to": "sunrise",
+			"open_at": 420,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "sunrise",
+			"open_at": 480,
+			"duration": 60
+		},
+
+		{
+			"gpio_id": "GPIO16",
+			"relative_to": "sunrise",
+			"open_at": 540,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO20",
+			"relative_to": "sunrise",
+			"open_at": 600,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "sunrise",
+			"open_at": 660,
+			"duration": 60
+		},
+
+		{
+			"gpio_id": "GPIO16",
+			"relative_to": "sunrise",
+			"open_at": 720,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO20",
+			"relative_to": "sunrise",
+			"open_at": 780,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "sunrise",
+			"open_at": 840,
+			"duration": 60
+		},
+
+		{
+			"gpio_id": "GPIO16",
+			"relative_to": "sunrise",
+			"open_at": 900,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO20",
+			"relative_to": "sunrise",
+			"open_at": 960,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "sunrise",
+			"open_at": 1020,
+			"duration": 60
+		},
+
+		{
+			"gpio_id": "GPIO16",
+			"relative_to": "sunrise",
+			"open_at": 1080,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO20",
+			"relative_to": "sunrise",
+			"open_at": 1140,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "sunrise",
+			"open_at": 1200,
+			"duration": 60
+		},
+
+		{
+			"gpio_id": "GPIO16",
+			"relative_to": "sunrise",
+			"open_at": 1260,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO20",
+			"relative_to": "sunrise",
+			"open_at": 1320,
+			"duration": 60
+		},
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "sunrise",
+			"open_at": 1380,
+			"duration": 60
+		},
+
+
+
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "dawn",
+			"open_at": 0,
+			"duration": -1
+		},
+		
+
+		{
+			"gpio_id": "GPIO21",
+			"relative_to": "nothing",
+			"open_at": 0,
+			"duration": 1
+		},
+		{
+			"gpio_id": "NADA",
+			"relative_to": "noon",
+			"open_at": 0,
+			"duration": 1
+		}
+	]
+}
+
