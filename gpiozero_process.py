@@ -1,7 +1,7 @@
 from gpiozero.pins.mock import MockFactory
 from gpiozero import Device, LED
 
-import ENVIRONMENT as Config
+import config.ENVIRONMENT as Config
 import sqlite3
 import sys
 from time import sleep
@@ -9,10 +9,10 @@ from time import sleep
 if Config.SHOULD_MOCK_GPIOZERO:
 	Device.pin_factory = MockFactory()
 
-GPIO_REGISTRY_LED = {
-	Config.SOLENOID_00: LED(Config.SOLENOID_00),
-	Config.SOLENOID_01: LED(Config.SOLENOID_01),
-	Config.SOLENOID_02: LED(Config.SOLENOID_02)}
+GPIO_REGISTRY_LED = dict()
+for gpioId in Config.GPIO_REGISTRY:
+	GPIO_REGISTRY_LED[gpioId] = LED(gpioId)
+	print(f'Observing schedule for {gpioId}')
 
 SQL_GET_GPIO_OPEN_NOW = '''SELECT DISTINCT name FROM schedule_led WHERE DATETIME("now", "localtime") BETWEEN open_at AND close_at;'''
 

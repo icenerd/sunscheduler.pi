@@ -3,7 +3,7 @@ from datetime import date
 from datetime import timedelta 
 from astral import LocationInfo
 from astral.sun import sun
-import ENVIRONMENT as Config
+import config.ENVIRONMENT as Config
 import json
 import sqlite3
 

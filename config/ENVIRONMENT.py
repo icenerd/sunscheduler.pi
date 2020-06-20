@@ -1,5 +1,4 @@
-'''Xōchipilli'''
-DATABASE_FILE = "database.sqlite.db"
+DATABASE_FILE = "bin/xōchipilli.sqlite.db"
 MANIFEST_FILE = "config/manifest_all_day.json"
 
 ''' Set to False when deployed on an actual device with available pins. '''
