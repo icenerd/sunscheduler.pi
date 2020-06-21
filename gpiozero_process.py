@@ -38,16 +38,15 @@ while True:
 		raOpenGPIOId = getOpenGPIOIdNow(db)
 		for gpioId, led in GPIO_REGISTRY_LED.items():
 			shouldBeOpen = gpioId in raOpenGPIOId
-
-			if shouldBeOpen and not led.is_lit:
+			isOn = led.is_lit
+			if shouldBeOpen and not isOn:
 				led.on()
 				print(f'{gpioId} is now OPEN')
-			elif shouldBeOpen and led.is_lit:
+			elif shouldBeOpen and isOn:
 				print(f'{gpioId} is OPEN')
 			else:
-				wasOn = led.is_lit
 				led.off()
-				if wasOn:
+				if isOn:
 					print(f'{gpioId} is now CLOSED')
 				else:
 					print(f'{gpioId} is CLOSED')
