@@ -1,4 +1,4 @@
-# python.irrigation
+# sunscheduler.pi
 
 An irrigation system intended for the following configuration:
 - Raspberry Pi Zero W
